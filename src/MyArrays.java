@@ -38,7 +38,7 @@ public class MyArrays {
         for (int i = 1; i < a.length; ++i) {
             if (i <= ind)
                 res[i] = a[i - 1];
-            if (i > ind)
+            else
                 res[i] = a[i];
         }
         return res;

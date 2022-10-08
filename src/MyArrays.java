@@ -18,15 +18,6 @@ public class MyArrays {
     public static int[] minToBegin(int[] a) {
         int min = a[0];
         int ind = 0;
-        boolean same = true;
-        for (int i = 1; i < a.length; ++i) {
-            if (a[i] != a[i - 1]) {
-                same = false;
-                break;
-            }
-        }
-        if (same)
-            return new int[]{-1};
         for (int i = 0; i < a.length; ++i) {
             if (a[i] < min) {
                 min = a[i];
